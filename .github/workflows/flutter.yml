@@ -17,7 +17,7 @@ jobs:
         - run: flutter --version
         - run: flutter pub get
         - run: flutter test
-        - run: flutter analyze
+        - run: flutter analyze --no-fatal-infos --no-fatal-warnings
 
     build-android:
       # Build Android APK and app bundle
