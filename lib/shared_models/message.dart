@@ -1,4 +1,4 @@
-import 'package:academix_flutter/models/user.dart';
+import 'package:academix_flutter/shared_models/user.dart';
 import 'package:uuid/uuid.dart';
 
 class MessageModel {

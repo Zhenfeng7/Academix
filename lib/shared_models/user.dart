@@ -1,4 +1,4 @@
-import 'package:academix_flutter/models/course.dart';
+import 'package:academix_flutter/shared_models/course.dart';
 
 class UserModel {
   late String id;  // email

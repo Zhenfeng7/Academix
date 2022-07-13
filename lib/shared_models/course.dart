@@ -1,6 +1,6 @@
-import 'package:academix_flutter/models/course_file.dart';
-import 'package:academix_flutter/models/course_section.dart';
-import 'package:academix_flutter/models/message.dart';
+import 'package:academix_flutter/shared_models/course_file.dart';
+import 'package:academix_flutter/shared_models/course_section.dart';
+import 'package:academix_flutter/shared_models/message.dart';
 
 class CourseModel {
   late String id;  // university + department + courseCode
