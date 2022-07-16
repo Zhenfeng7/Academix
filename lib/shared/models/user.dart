@@ -1,4 +1,4 @@
-import 'package:academix_flutter/shared_models/course.dart';
+import 'package:academix_flutter/shared/models/course.dart';
 
 class UserModel {
   late String id;  // email
@@ -15,4 +15,15 @@ class UserModel {
     courses = {};
     friends = [];
   }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is UserModel &&
+        other.id == id;
+  }
+
+  @override
+  int get hashCode => id.hashCode;
 }

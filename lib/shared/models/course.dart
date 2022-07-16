@@ -1,6 +1,6 @@
-import 'package:academix_flutter/shared_models/course_file.dart';
-import 'package:academix_flutter/shared_models/course_section.dart';
-import 'package:academix_flutter/shared_models/message.dart';
+import 'package:academix_flutter/shared/models/course_file.dart';
+import 'package:academix_flutter/shared/models/course_section.dart';
+import 'package:academix_flutter/shared/models/message.dart';
 
 class CourseModel {
   late String id;  // university + department + courseCode
@@ -20,6 +20,17 @@ class CourseModel {
     fileArchive = [];
     messages = [];
   }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is CourseModel &&
+        other.id == id;
+  }
+
+  @override
+  int get hashCode => id.hashCode;
 
   String getName() => '$department$courseCode';
 }
